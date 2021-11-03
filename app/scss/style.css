@@ -89,7 +89,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
-  color: #9698a6;
+  color: black;
   line-height: 1.3;
   min-height: 300vh;
 }
@@ -342,7 +342,7 @@ button:hover, .button:hover {
 
 .header__links a {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   color: #9698a6;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -429,6 +429,10 @@ button:hover, .button:hover {
   text-align: center;
 }
 
+.feature h2 {
+  text-align: center;
+}
+
 @media (min-width: 40em) {
   .feature {
     text-align: left;
@@ -497,7 +501,7 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .feature__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -505,6 +509,139 @@ button:hover, .button:hover {
 .feature__description {
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .feature__description {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.foods {
+  background-color: #fafafa;
+}
+
+.food__content h2 {
+  text-align: center;
+}
+
+.food__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+@media (min-width: 40em) {
+  .food__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .food__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.food__item {
+  border-radius: 0.3125rem;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.food__image {
+  height: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.food__text {
+  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+  color: #9698a6;
+}
+
+@media (min-width: 40em) {
+  .food__text {
+    padding: 1.875rem 1.5625rem;
+  }
+}
+
+.food__title {
+  font-size: 1.0625rem;
+  line-height: 1.2;
+  color: #2d314d;
+  margin-bottom: 0.5rem;
+}
+
+.food__description {
+  font-size: 0.8125rem;
+}
+
+.contacto {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .contacto__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.contacto__item {
+  padding: 0.9375rem;
+}
+
+@media (min-width: 40em) {
+  .contacto__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .contacto__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.contacto__description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 64em) {
+  .contacto__description {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.contacto__icon {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .contacto__icon {
+    margin-bottom: 2.75rem;
+  }
 }
 
 .footer {
@@ -518,11 +655,11 @@ button:hover, .button:hover {
   .footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4fr 4fr 4fr 4fr;
-        grid-template-columns: 4fr 4fr 4fr 4fr;
+    -ms-grid-columns: 4fr 4fr 4fr;
+        grid-template-columns: 4fr 4fr 4fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 copyright"  "social links1 links2 copyright";
+        grid-template-areas: "logo links1 copyright"  "social links1 copyright";
     gap: 1rem;
     justify-items: start;
   }
@@ -594,24 +731,19 @@ button:hover, .button:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .footer__links.col1 {
+    margin-bottom: 1.875rem;
   }
 }
 
 @media (min-width: 64em) {
   .footer__links.col1 {
     grid-area: links1;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .footer__links.col2 {
-    margin-bottom: 1.875rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .footer__links.col2 {
-    grid-area: links2;
   }
 }
 
@@ -646,6 +778,7 @@ button:hover, .button:hover {
 
 @media (min-width: 64em) {
   .footer__copyright {
+    font-size: 1.125rem;
     grid-area: copyright;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;

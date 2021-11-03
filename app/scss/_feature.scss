@@ -1,7 +1,9 @@
 .feature {
     background-color: $lightGrayishBlue;
     text-align: center;
-
+    h2{
+        text-align: center;
+    }
     @include breakpoint-up(medium){
         text-align: left;
     }
@@ -51,7 +53,7 @@
         margin-bottom: 1rem;
 
         @include breakpoint-up(large){
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
         }
     }
@@ -61,7 +63,8 @@
         line-height: 1.5;
 
         @include breakpoint-up(large){
-
+            text-align: center;
+            font-size: 2rem;
         }
     }
 }

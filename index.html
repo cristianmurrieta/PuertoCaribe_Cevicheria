@@ -24,7 +24,7 @@
     </div>
     <nav class="container flex flex-jc-sb flex-ai-c container--pall">
       <a href="/" class="header__logo">
-        <img src="/assets/images/puerto_caribe_logo.jpg" alt="Cevicheria">
+        <img src="/assets/images/puerto_caribe_logox2.jpg" alt="Cevicheria">
       </a>
       <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
         <span></span>
@@ -33,46 +33,89 @@
       </a>
       <div class="header__links hide-for-mobile">
         <a href="#">Inicio</a>
-        <a href="#">Carta</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+        <a href="#carta_cevicheria">Carta</a>
+        <a href="#nosotros_puertocaribe">Nosotros</a>
+        <a href="#contacto_puertocaribe">Contacto</a>
       </div>
       <a href="#" class="button header__cta hide-for-mobile">Request invite</a>
     </nav>
 
     <div class="header__menu has-fade">
       <a href="#">Inicio</a>
-      <a href="#">Carta</a>
-      <a href="#">Nosotros</a>
-      <a href="#">Contacto</a>
+      <a href="#carta_cevicheria">Carta</a>
+      <a href="#nosotros_puertocaribe">Nosotros</a>
+      <a href="#contacto_puertocaribe">Contacto</a>
     </div>
   </header>
   
   <section class="hero">
       <div class="hero__image">
         <img src="/assets/images/puertocaribe_banner.jpg" alt="Banner">
+       <!--  <img src="/assets/images/banner_prueba.jpg" alt="banner prueba">-->
       </div>
-      <div class="hero__text container--pall">
+      <div id="carta_cevicheria" class="hero__text container--pall">
         <h1>
           Puerto Caribe | Cevicheria
         </h1>
         <div class="feature__grid">
+
           <div class="feature__item">
             <div class="feature__title">
               Carta
             </div>
             <div class="feature__description">
-              aca iria una pequeña descripcion de la carta
+              Nuestra carta cuenta con una diversidad de platos con ingredientes estrella, 
+              los cuales, nuestros chef aportan con la esencia de cada uno de ellos en nuestros platos. Nos esmeramos en brindarle una propuesta innovadora para sus paladares, todo esto pensado en la satisfacción de nuestros clientes.
             </div>
           </div>
           <div class="feature__item hero__carta">
             <a href="https://drive.google.com/file/d/1HNQCkwcGr3W04rYnaWpNBWT_shUNi0vW/view?usp=sharing" width="50" height="100" target="_blank"><img src="/assets/images/puerto_caribe_carta.png" alt="Puerto Caribe Carta"></a>
           </div>
+
         </div>
       </div>
     </section>
+
+    <section class="foods">
+
+      <div class="food__content container--pall">
+        <h2>Algunos de nuestros platos</h2>
+        <div class="food__grid">
+          <div class="food__item">
+            <div class="food__image" style="background-image: url('/assets/images/puerto_caribe_triomarino.jpg');"></div>
+            <div class="food__text">
+              <div class="food__title">Trio Marino</div>
+              <div class="food__description">Arroz con langostino + ceviche de pescad + chicharron mixto </div>
+            </div>
+          </div>
+          <div class="food__item">
+            <div class="food__image" style="background-image: url('/assets/images/puerto_caribe_conchasnegras.jpg');"></div>
+            <div class="food__text">
+              <div class="food__title">Cebiche de conchas negras</div>
+              <div class="food__description">Super fresco</div>
+            </div>
+          </div>
+          <div class="food__item">
+            <div class="food__image" style="background-image: url('/assets/images/puerto_caribe_arrozmariscos.jpg');"></div>
+            <div class="food__text">
+              <div class="food__title">Arroz con mariscos</div>
+              <div class="food__description">Seleccion de mariscos frescos para el disfrute del comensal </div>
+            </div>
+          </div>
+          <div class="food__item">
+            <div class="food__image" style="background-image: url('/assets/images/puerto_caribe_jalea.jpg');"></div>
+            <div class="food__text">
+              <div class="food__title">Jalea de pescado</div>
+              <div class="food__description">Pescado + Mariscos frescos </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section>    
     
-    <section class="feature container--pall">
+    <section  id="nosotros_puertocaribe" class="feature container--pall">
       <h2>Nosotros</h2>
       <div class="feature__grid">
       <div class="feature__item hero__image">
@@ -113,15 +156,36 @@
     </div>
   </section>
 
+<section id="contacto_puertocaribe" class="contacto container--pall">
+  <h2>Contacto</h2>
+  <div class="contacto__grid">
+   <div class="contacto__item">
+     <div class="contacto__description">
+      Estamos ubicados en: Jr. castilla 836 magdalena del mar
+     </div>
+     <div class="contacto__description">Número: 974 671 233 </div>
+     <div class="contacto__description">Horario de atención de 11:00 a.m. a 6:00 pm </div>
+     <div class="contacto__description">Síguenos en redes: 
+       <a href="https://www.facebook.com/CevicheriaPuertoCaribe" target="_blank">Facebook</a>, 
+       <a href="https://www.instagram.com/cevicheriapuertocaribe/" target="_blank">Instagram</a>, 
+       y <a href="#" target="_blank">whatsapp</a></div>
+     <div class="contacto__icon">
+      <img src="/assets/images/puerto_caribe_contacto.png" alt="Puerto_Caribe_Contacto">
+     </div>
+   </div> 
+  </div>
+
+</section>
+
  <footer class="footer">
     <a class="footer__logo" href="#">
       <img src="/assets/images/puerto_caribe_logo.jpg" alt="puerto_caribe_logo">
     </a>
     <div class="footer__social">
-      <a href="#">
+      <a href="https://www.facebook.com/CevicheriaPuertoCaribe" target="_blank">
         <img src="/assets/images/facebook.png" alt="facebook">
       </a>
-      <a href="#">
+      <a href="https://www.instagram.com/cevicheriapuertocaribe/" target="_blank">
         <img src="/assets/images/instagram.png" alt="instagram">
       </a>
       <a href="#">
@@ -130,17 +194,17 @@
     </div>
 
     <div class="footer__links col1">
-      <a href="#">Nosotros</a>
-      <a href="#">Contacto</a>
+      <a href="#nosotros_puertocaribe">Nosotros</a>
+      <a href="#contacto_puertocaribe">Contacto</a>
       <a href="#">Blog</a>
     </div>
-    <div class="footer__links col2">
+    <!-- <div class="footer__links col2">
       <a href="#">Carrers</a>
       <a href="#">Support</a>
       <a href="#">Privacy</a>
     </div>
 
-   <!-- <div class="footer__cta">
+   <div class="footer__cta">
       <a href="#" class="button">Request Invite</a>
     </div>
   -->
@@ -151,7 +215,7 @@
   
   
   <div class="attribution">
-    Coded by <a href="https://github.com/cristianmurrieta" target="_blank">Cristian Murrieta</a>.
+    Coded by <a href="https://github.com/cristianmurrieta" target="_blank">CFMM</a>.
   </div>
   <script src="./app/js/script.js"></script>
 </body>
