@@ -1,7 +1,26 @@
 .hero {
+
+    background-color: $veryLightGray;
+
+    .container {
+        @include breakpoint-up(large){    
+            display: flex;
+            align-items: center;
+        }
+    }
+
     &__image {
+        background-size: cover;
         img {
             width: 100%;
+            height: auto;
+        }
+    }
+
+    &__carta{
+        text-align: center;
+        img{
+            width: 50%;
             height: auto;
         }
     }
