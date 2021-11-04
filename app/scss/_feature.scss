@@ -58,6 +58,14 @@
         }
     }
 
+    .flexbox {
+        display: flex;
+        align-items: center;
+        //height: 100px;
+        justify-content: center;
+        //width: 200px;
+    }
+
     &__description {
         font-size: 0.875rem;
         line-height: 1.5;

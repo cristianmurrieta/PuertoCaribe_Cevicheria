@@ -9,8 +9,8 @@
         grid-template-columns: 4fr 4fr 4fr;
         grid-template-rows: 1fr auto;
         grid-template-areas: 
-        "logo links1 copyright" 
-        "social links1 copyright";
+        "logo links1 links2 copyright" 
+        "social links1 links2 cta";
         gap: 1rem;
         justify-items: start;
     }
@@ -65,14 +65,24 @@
 
         &.col1{
 
-            @include breakpoint-down(medium){
-                margin-bottom: 1.875rem;
-            }
+            //@include breakpoint-down(medium){
+            //    margin-bottom: 1.875rem;
+            //}
             @include breakpoint-up(large){
                 grid-area: links1;
             }
 
         }
+
+        &.col2 {
+            @include breakpoint-down(medium) {
+              margin-bottom: 1.875rem;
+            }
+      
+            @include breakpoint-up(large) {
+              grid-area: links2;
+            }
+          }
         
         a {
             line-height: 2.25;
@@ -86,18 +96,17 @@
 
     &__cta{
 
-        @include breakpoint-up(large){
-            grid-area: cta;
-            text-align: right;
-            justify-items: end;
-        }
+        font-size: 0.8125rem;
+        color: $grayishBlue;
 
-        a.button{
-            @include breakpoint-down(medium){
-            margin-bottom: 1.875rem;
+        @include breakpoint-up(large){
+            font-size: $font-med;
+            grid-area: cta;
+            align-self: end;
+            justify-self: end;
         }
     }
-}
+
 
     &__copyright{
         font-size: 0.8125rem;
@@ -110,4 +119,9 @@
             justify-self: end;
         }
     }
+
+    .attribution {
+        margin-top: 4rem;
+        font-size: 0.875rem;
+      }
 }
